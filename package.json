@@ -1,0 +1,86 @@
+{
+  "name": "pak-school-management",
+  "version": "1.0.0",
+  "main": "dist/main/main.js",
+  "description": "",
+  "author": "Muhammad Rohaib, Rohaib Tech",
+  "license": "MIT",
+  "keywords": [],
+  "scripts": {
+    "dev": "concurrently -k \"cross-env NODE_ENV=development vite\" \"wait-on http://localhost:5173 && electron .\"",
+    "build:renderer": "vite build",
+    "build:main": "vite build --config electron.vite.config.js",
+    "build": "npm run build:renderer && npm run build:main && electron-builder",
+    "start": "electron .",
+    "watch": "vite build --watch",
+    "rebuild": "electron-rebuild"
+  },
+  "build": {
+    "appId": "com.rohaibtech.schoolapp",
+    "productName": "Pak School Management",
+    "directories": {
+      "output": "dist-electron"
+    },
+    "files": [
+      "dist/renderer/**",
+      "dist/main/**",
+      "src/main/**",
+      "package.json"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "src/renderer/assets/logo.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.4.1",
+    "autoprefixer": "^10.4.17",
+    "concurrently": "^9.1.2",
+    "cross-env": "^7.0.3",
+    "electron": "^36.2.0",
+    "electron-builder": "^26.0.12",
+    "postcss": "^8.4.30",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.4.1",
+    "vite": "^6.3.5",
+    "wait-on": "^8.0.3"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@headlessui/react": "^2.2.3",
+    "@heroicons/react": "^2.2.0",
+    "@mui/material": "^7.1.0",
+    "axios": "^1.9.0",
+    "better-sqlite3": "^11.10.0",
+    "chart.js": "^4.4.9",
+    "date-fns": "^4.1.0",
+    "exceljs": "^4.4.0",
+    "file-saver": "^2.0.5",
+    "formik": "^2.4.6",
+    "framer-motion": "^12.10.5",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^3.0.1",
+    "nanoid": "^5.1.5",
+    "react-calendar": "^5.1.0",
+    "react-chartjs-2": "^5.3.0",
+    "react-datepicker": "^8.3.0",
+    "react-dropzone": "^14.3.8",
+    "react-google-charts": "^5.2.1",
+    "react-hot-toast": "^2.5.2",
+    "react-icons": "^5.5.0",
+    "react-qr-code": "^2.0.15",
+    "react-router-dom": "^7.6.0",
+    "react-select": "^5.10.1",
+    "react-table": "^7.8.0",
+    "react-toggle-dark-mode": "^1.1.1",
+    "uuid": "^11.1.0",
+    "xlsx": "^0.18.5",
+    "yup": "^1.6.1"
+  }
+}
