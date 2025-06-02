@@ -121,7 +121,24 @@ ELECTRON_START_URL=http://localhost:3000
 
 ## 📸 Screenshots
 
-*Add screenshots here when ready.*
+![image](https://github.com/user-attachments/assets/11497c2c-1822-4fb2-a74f-295ef582a229)
+
+![image](https://github.com/user-attachments/assets/dd6dfab8-ac0b-4a6e-8cc3-7dd044779516)
+
+![image](https://github.com/user-attachments/assets/96a4317a-7f0f-4f18-9927-066792ef59d6)
+![image](https://github.com/user-attachments/assets/fcb5f98e-41da-450a-a146-34a0d871cf0d)
+
+![image](https://github.com/user-attachments/assets/0f4f1e1a-29f0-4ea8-a059-013bf1adcb3b)
+
+![image](https://github.com/user-attachments/assets/79672933-0f24-4946-b1d8-ceee1de596ea)
+
+![image](https://github.com/user-attachments/assets/8035e1df-e40e-44fd-87f5-59d450239f70)
+
+![image](https://github.com/user-attachments/assets/f92e0beb-2442-4a21-affc-681087d7ce04)
+
+![image](https://github.com/user-attachments/assets/cb588375-8db8-4148-ab3e-0ac200046535)
+
+![image](https://github.com/user-attachments/assets/677389c9-9a04-4c7b-affe-10874719dc05)
 
 ---
 
